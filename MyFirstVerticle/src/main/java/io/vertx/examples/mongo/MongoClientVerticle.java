@@ -6,11 +6,17 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.examples.utils.Runner;
 import io.vertx.ext.mongo.MongoClient;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MongoClientVerticle extends AbstractVerticle {
 
     public static void main(String[] args) {
         Runner.runExample(MongoClientVerticle.class);
     }
+
+    private Map<String, JsonObject> products = new HashMap<>();
+
 
     @Override
     public void start() throws Exception {
