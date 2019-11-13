@@ -79,5 +79,5 @@ public class Runner {
             runner.accept(vertx);
         }
     }
-    
+
 }
